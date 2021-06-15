@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (C) 2018 Dolby Laboratories
+ *  This program is protected under international and U.S. copyright laws as
+ *  an unpublished work. This program is confidential and proprietary to the
+ *  copyright owners. Reproduction or disclosure, in whole or in part, or the
+ *  production of derivative works therefrom without the express permission of
+ *  the copyright owners is prohibited.
+ *                 Copyright (C) 2018 by Dolby Laboratories.
+ *                             All rights reserved.
+-->
+<permissions>
+    <privapp-permissions package="com.dolby.daxservice">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+        <permission name="android.permission.BLUETOOTH"/>
+        <permission name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="com.dolby.permission.DOLBY_UPDATE_BROADCAST"/>
+    </privapp-permissions>
+        <privapp-permissions package="com.motorola.dolby.dolbyui">
+        <permission name="android.permission.BIND_QUICK_SETTINGS_TILE"/>
+        <permission name="android.permission.BIND_JOB_SERVICE"/>
+        <permission name="android.permission.VIBRATE"/>
+        <permission name="android.permission.BLUETOOTH"/>
+        <permission name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+        <permission name="android.permission.FOREGROUND_SERVICE"/>
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        <permission name="android.permission.ACCESS_CHECKIN"/>
+        <permission name="android.permission.WAKELOCK"/>
+        <permission name="com.dolby.permission.DOLBY_UPDATE_BROADCAST"/>
+        <permission name="com.motorola.dolby.dolbyui.permission.WRITE_MATRIX_SUMMARY"/>
+        <permission name="com.motorola.dolby.dolbyui.permission.READ_MATRIX_SUMMARY"/>
+    </privapp-permissions>
+</permissions>
