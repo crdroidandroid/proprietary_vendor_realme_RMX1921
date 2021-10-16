@@ -1515,6 +1515,25 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@1.0-impl.so \
     vendor/realme/RMX1921/proprietary/vendor/lib64/vendor.dolby.hardware.dms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@1.0.so
 
+# Camera firmware
+PRODUCT_COPY_FILES += \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/aecWarmStartCamera_0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_0.txt \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/aecWarmStartCamera_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_1.txt \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/aecWarmStartCamera_2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_2.txt \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/aecWarmStartCamera_3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/aecWarmStartCamera_3.txt \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/af_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/af_calibration_s5kgw1_p24c128e_sunny.bin \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/awbWarmStartCamera_0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_0.txt \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/awbWarmStartCamera_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_1.txt \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/awbWarmStartCamera_2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_2.txt \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/awbWarmStartCamera_3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/awbWarmStartCamera_3.txt \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/mapx.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/mapx.bin \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/mapy.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/mapy.bin \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/pdaf2D_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/pdaf2D_calibration_s5kgw1_p24c128e_sunny.bin \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/pdafdcc_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/pdafdcc_calibration_s5kgw1_p24c128e_sunny.bin \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/sony_imx471_cross_talk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/sony_imx471_cross_talk.bin \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/sony_imx471_dpc_tbl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/sony_imx471_dpc_tbl.bin \
+    vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/spc_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/spc_calibration_s5kgw1_p24c128e_sunny.bin
+
 PRODUCT_PACKAGES += \
     libantradio \
     libplatformconfig \
