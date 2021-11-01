@@ -1542,6 +1542,15 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/sony_imx471_dpc_tbl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/sony_imx471_dpc_tbl.bin \
     vendor/realme/RMX1921/proprietary/vendor/etc/data/camera/spc_calibration_s5kgw1_p24c128e_sunny.bin:$(TARGET_COPY_OUT_VENDOR)/etc/data/camera/spc_calibration_s5kgw1_p24c128e_sunny.bin
 
+PRODUCT_COPY_FILES += \
+    vendor/realme/RMX1921/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/realme/RMX1921/proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar \
+    vendor/realme/RMX1921/proprietary/product/etc/permissions/com.android.hotwordenrollment.okgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.hotwordenrollment.okgoogle.xml \
+    vendor/realme/RMX1921/proprietary/product/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml
+
+PRODUCT_PACKAGES += \
+    HotwordEnrollmentOKGoogleHEXAGON
+
 PRODUCT_PACKAGES += \
     libantradio \
     libplatformconfig \
