@@ -1,5 +1,5 @@
 {
-    "19691":{
+    "19651":{
         "platform_config":{
             "sensor_arch":"qcom_sensor_see"
         },
@@ -7,7 +7,13 @@
             "android.sensor.accelerometer":{
                 "type":1,
                 "support":"true",
-                "module":"bmi160",
+                "module":"lsm6ds3_c|bmi160",
+                "lsm6ds3_c":{
+                    "mode":"batch_cali|factory_cali",
+                    "offset_x": 0.0,
+                    "offset_y": 0.0,
+                    "offset_z": 0.0
+                },
                 "bmi160":{
                     "mode":"batch_cali|factory_cali",
                     "offset_x": 0.0,
@@ -18,15 +24,25 @@
             "android.sensor.magnetic_field":{
                 "type":2,
                 "support":"true",
-                "module":"ak0991x",
+                "module":"ak0991x|mmc5603x",
                 "ak0991x":{
-                    "mode":"batch_cali"
+                  "mode":"batch_cali"
+                },
+                "mmc5603x":{
+                  "mode":"batch_cali"
                 }
             },
             "android.sensor.gyroscope":{
                 "type":4,
                 "support":"true",
-                "module":"bmi160",
+                "module":"lsm6ds3_c|bmi160",
+                "lsm6ds3_c":{
+                    "mode":"batch_cali|factory_cali",
+                    "radian_threshold":0.05,
+                    "offset_x": 0.0,
+                    "offset_y": 0.0,
+                    "offset_z": 0.0
+                },
                 "bmi160":{
                     "mode":"batch_cali|factory_cali",
                     "radian_threshold":0.05,
@@ -37,25 +53,36 @@
             },
             "android.sensor.light":{
                 "type":5,
-				"support":"true",
-				"module":"tsl2540",
-				"tsl2540":{
-					"mode":"factory_cali",
-					"cali_para":1000
-				}
-			},
+                "support":"true"
+            },
+            "qti.sensor.wise_light":{
+                "type":33171027,
+                "support":"true",
+                "module":"stk_stk2x2x",
+                "stk_stk2x2x":{
+                   "mode":"oled_light_leak|factory_cali",
+                   "cali_para": 1000,
+                   "R_MAX": 0,
+                   "G_MAX": 0,
+                   "B_MAX": 0,
+                   "W_MAX": 0
+                }
+            },
             "android.sensor.proximity":{
                 "type":8,
+                "support":"true"
+            },
+            "android.sensor.proximity_fake":{
+                "type":33171005,
                 "support":"true",
-				"module":"stk_stk3x3x",
-				"stk_stk3x3x":{
-					"mode":"ignore_mean|micro_gap|factory_cali",
-					"delta_threshold":150,
-					"ps0_offset":0,
-					"ps0_distance_delta":110,
-					"ps1_offset":0,
-					"ps1_distance_delta":0
-				}
+                "module":"stk_stk2x2x",
+                "stk_stk2x2x":{
+                    "mode":"ignore_mean|factory_cali",
+                    "offset_1": 110,
+                    "threshold_1": 0,
+                    "offset_2": 0,
+                    "threshold_2": 0
+                }
             },
             "android.sensor.step_counter":{
                 "type":19,
@@ -73,4 +100,3 @@
         }
     }
 }
-
